@@ -8,7 +8,7 @@
 
 .top-navbar {
     width: 100%;
-    height: 7vh;
+    height: 40px;
     background: rgba(0, 0, 0, 0.273);
     display: flex;
     align-items: center;
@@ -169,28 +169,19 @@
     color: white;
 }
 
-.home-secton .logo1 {
-    color: white;
+.logo1 {
+    color: white !important;
     font-family: 'Righteous', cursive;
     letter-spacing: 4px;
     font-size: 30px;
 }
 
-.home-secton .logo1:hover {
-    color: white;
-    letter-spacing: 4px;
-    font-size: 30px;
-    font-family: 'Righteous', cursive;
-
-}
-
-.home-secton .logo1 span {
+.logo1 span {
     color: rgb(226, 102, 102);
     font-family: 'Righteous', cursive;
     letter-spacing: 1px;
     font-size: 40px;
     font-weight: bolder;
-
 }
 
 .change-content::after {
@@ -210,6 +201,9 @@
     background-color: #0474BC;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
+    top: 0;
+    z-index: 10;
+    position: sticky;
 }
 
 #navbar .nav-link {
@@ -320,9 +314,16 @@
         background-color: #0474BC;
         border: #0474BC 4px solid;
     }
+
     .home .img img {
         margin-left: 0px;
 
+    }
+    .fa-user:before,.fa-cart-shopping:before{
+        display: none;
+    }
+    .other-links {
+        margin-right: 0;
     }
 
 }
