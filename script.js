@@ -14,4 +14,13 @@ function fadeOut() {
     setTimeout(loader, 4000)
 }
 
-$('.single-item').slick();
+document.getElementById('shopnow').addEventListener('click', function() {
+    const target = document.getElementById('product-cards');
+    if (target) {
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: targetPosition - 100,
+            behavior: 'smooth'
+        });
+    }
+});
