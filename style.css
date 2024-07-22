@@ -382,8 +382,8 @@
 }
 
 #top-cards .card img {
-    height: 70vh;
-    opacity: .8;
+    height: 100%;
+    opacity: .9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 8px;
@@ -399,6 +399,7 @@
     box-shadow: 0 0 5px;
     background-color: transparent !important;
     position: relative;
+    height: 350px;
 }
 
 #top-cards h4 {
@@ -945,5 +946,7 @@ html {
 
 .product-name-and-button {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 60%;
 }
