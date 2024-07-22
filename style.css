@@ -289,14 +289,14 @@
 
 @media screen and (max-width:800px) {
     .content h3 {
-        margin-left: 50px;
+        margin-left: 0px;
         font-size: 40px;
 
     }
 
     .content p {
-        margin-left: 50px;
-
+        margin-left: 0px;
+        padding: 20px;
     }
 
     .content #shopnow {
@@ -319,9 +319,12 @@
         margin-left: 0px;
 
     }
-    .fa-user:before,.fa-cart-shopping:before{
+
+    .fa-user:before,
+    .fa-cart-shopping:before {
         display: none;
     }
+
     .other-links {
         margin-right: 0;
     }
@@ -379,12 +382,12 @@
 }
 
 #top-cards .card img {
-    height: 50vh;
+    height: 70vh;
     opacity: .8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 8px;
-
+    padding: 0 50px 100px 50px;
 }
 
 #top-cards .card:hover {
@@ -394,10 +397,13 @@
 #top-cards .card {
     transition: 0.5s ease;
     box-shadow: 0 0 5px;
+    background-color: transparent !important;
+    position: relative;
 }
 
 #top-cards h4 {
-    color: #0474BC;
+    color: black;
+    font-family: sans-serif;
     font-weight: bold;
     text-align: center;
 }
@@ -889,4 +895,55 @@ html {
 #messagebtn button:hover {
     background-color: #0474BC;
     color: white;
+}
+
+/* carousel */
+/* 
+.single-item {
+    margin: auto;
+}
+.product {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.product h2,
+.product p,
+.product a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.product h2 {
+    font-size: 24px;
+}
+
+.product p {
+    font-size: 16px;
+}
+
+.product a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product a:hover {
+    background-color: #0056b3;
+} */
+
+.product-name-and-button {
+    position: absolute;
+    top: 60%;
 }

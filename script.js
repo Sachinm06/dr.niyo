@@ -13,3 +13,5 @@ function loader() {
 function fadeOut() {
     setTimeout(loader, 4000)
 }
+
+$('.single-item').slick();
