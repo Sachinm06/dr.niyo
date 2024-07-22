@@ -22,8 +22,13 @@ html {
 
 .top-icons {
     margin-left: 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-
+.top-icons .fa-solid {
+    margin-bottom: 0;
+}
 .top-icons i {
     font-size: 25px;
     color: #040484;
@@ -98,11 +103,11 @@ html {
 
 @media screen and (max-width:500px) {
     .top-icons {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .top-icons i {
-        font-size: 15px;
+        font-size: 30px;
     }
 
     .other-links i {
@@ -298,6 +303,9 @@ html {
 }
 
 @media screen and (max-width:800px) {
+    .buy-button {
+        top: -28px !important;
+    }
     .product-name-and-button {
         top: 62% !important;
     }
@@ -993,14 +1001,47 @@ html {
     color: #fff;
     margin-bottom: 20px;
 }
-.fas{
+
+.fas {
     margin-bottom: 15px;
 }
+
 .fa-envelope:before,
 .fa-phone:before {
     margin-right: 15px;
 }
-.footer-contact a{
+
+.footer-contact a {
     color: #fff !important;
     text-decoration: none !important;
+}
+
+.price-and-buy {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.buy-button {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #0474BC;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -23px;
+    right: 0;
+}
+
+.buy-button:hover {
+    background-color: #e5be1f;
+    color: black;
 }
