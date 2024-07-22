@@ -298,9 +298,10 @@ html {
 }
 
 @media screen and (max-width:800px) {
-    .product-name-and-button{
+    .product-name-and-button {
         top: 62% !important;
     }
+
     .content h3 {
         margin-left: 0px;
         font-size: 40px;
@@ -598,7 +599,7 @@ html {
 }
 
 #footer {
-    padding: 0 0 30px 0;
+    padding: 0 0 15px 0;
     color: whitesmoke;
     font-size: 14px;
     background: #0474BC;
@@ -607,7 +608,7 @@ html {
 }
 
 #footer .footer-top {
-    padding: 60px 0 30px;
+    padding: 60px 0 0px;
     background: #0474BC;
     color: white;
 
@@ -979,9 +980,27 @@ html {
     right: 0;
     top: 70%;
 }
-.card-body h5{
+
+.card-body h5 {
     font-size: 20px;
 }
-.star{
+
+.star {
     padding-bottom: 10px;
+}
+
+.fa-solid {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.fas{
+    margin-bottom: 15px;
+}
+.fa-envelope:before,
+.fa-phone:before {
+    margin-right: 15px;
+}
+.footer-contact a{
+    color: #fff !important;
+    text-decoration: none !important;
 }
