@@ -532,6 +532,7 @@ html {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.5s ease;
     border: none;
+    align-items: center;
 }
 
 #product-cards .card:hover {
@@ -540,6 +541,9 @@ html {
 
 #product-cards img {
     border-radius: 10px;
+    width: 200px;
+    height: 250px;
+    padding-top: 15px;
 }
 
 #product-cards h3 {
@@ -974,4 +978,10 @@ html {
     left: 0;
     right: 0;
     top: 70%;
+}
+.card-body h5{
+    font-size: 20px;
+}
+.star{
+    padding-bottom: 10px;
 }
