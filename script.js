@@ -14,13 +14,17 @@ function fadeOut() {
     setTimeout(loader, 4000)
 }
 
-document.getElementById('shopnow').addEventListener('click', function() {
-    const target = document.getElementById('product-cards');
-    if (target) {
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({
-            top: targetPosition - 100,
-            behavior: 'smooth'
-        });
-    }
+ // Add event listeners to all elements with class 'scroll-to-product-cards'
+ document.querySelectorAll('.scroll-to-product-cards').forEach(element => {
+    element.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action for links
+        const target = document.getElementById('product-cards');
+        if (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: targetPosition - 100,
+                behavior: 'smooth'
+            });
+        }
+    });
 });

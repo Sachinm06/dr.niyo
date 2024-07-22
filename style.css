@@ -228,6 +228,11 @@ html {
 }
 
 .home {
+    height: 85vh;
+    background-image: url('./images/new/b4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,14 +293,13 @@ html {
 .content #shopnow:hover {
     background-color: #0474BC;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #0474BC;
 }
 
 @media screen and (max-width:800px) {
     .content h3 {
         margin-left: 0px;
         font-size: 40px;
-
     }
 
     .content p {
@@ -333,20 +337,23 @@ html {
         margin-right: 0;
     }
 
+    .home {
+        height: auto;
+    }
 }
 
 @media screen and (max-width:600px) {
     .content h3 {
-        margin-left: 20px;
+        /* margin-left: 20px; */
         font-size: 30px;
         text-align: center;
 
     }
 
     .content p {
-        margin-left: 20px;
-        font-size: 18px;
-        text-align: center;
+        /* margin-left: 20px; */
+        font-size: 20px;
+        text-align: left;
 
     }
 
@@ -452,7 +459,7 @@ html {
 
 .banner {
     margin-top: 50px;
-    background-image: url(./images/banner1.jpeg);
+    background-image: url(./images/new/b4.jpg);
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
