@@ -26,9 +26,11 @@ html {
     align-items: center;
     gap: 15px;
 }
+
 .top-icons .fa-solid {
     margin-bottom: 0;
 }
+
 .top-icons i {
     font-size: 25px;
     color: #040484;
@@ -139,7 +141,7 @@ html {
     }
 
     .top-icons i {
-        font-size: 10px;
+        font-size: 25px;
     }
 
     .other-links i {
@@ -213,6 +215,7 @@ html {
     top: 0;
     z-index: 10;
     position: sticky;
+    padding: 0 !important;
 }
 
 #navbar .nav-link {
@@ -303,9 +306,26 @@ html {
 }
 
 @media screen and (max-width:800px) {
+    .navbar-toggler {
+        padding: 15px 15px 0px 18px !important;
+    }
+
+    .navbar-container {
+        position: relative;
+    }
+
+    .logo1 img {
+        width: 150px !important;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .buy-button {
         top: -28px !important;
     }
+
     .product-name-and-button {
         top: 62% !important;
     }
@@ -1044,4 +1064,8 @@ html {
 .buy-button:hover {
     background-color: #e5be1f;
     color: black;
+}
+
+.logo1 img {
+    width: 185px;
 }
