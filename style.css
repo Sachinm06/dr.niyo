@@ -236,8 +236,8 @@ html {
 }
 
 .home {
-    height: 85vh;
-    background-image: url('./images/new/b7.webp');
+    height: 90vh;
+    background-image: url('./images/new/a7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -549,6 +549,15 @@ html {
         justify-content: center;
         text-align: center;
         margin-top: 70px;
+    }
+    .home {
+        height: 90vh !important;
+    }
+    .home .img{
+        display: none !important;
+    }
+    .home .content{
+        margin-top: -50px !important;
     }
 }
 
